@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "target": "ESNext",
+      "lib": ["ESNext", "DOM"],
+      "types": ["vite/client", "node"],
+      "allowSyntheticDefaultImports": true
+    },
+    "include": ["src/**/*", "vite.config.ts"]
+}

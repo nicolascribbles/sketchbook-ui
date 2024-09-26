@@ -1,0 +1,16 @@
+# Ensure all text files use LF in the repository and CRLF on Windows
+* text=auto
+
+# Treat certain file types as binary (no line-ending conversion)
+*.png binary
+*.jpg binary
+*.gif binary
+
+# Force LF line endings for specific files
+*.sh text eol=lf
+*.vue text eol=lf
+*.ts text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
