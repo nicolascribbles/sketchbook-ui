@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,  
+    "declarationDir": "./dist",
+    "outDir": "./dist",
+    "lib": ["ES2020", "DOM"],
+    "skipLibCheck": true,
+    "strict": true,
+    "isolatedModules": true,
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "types": ["vite/client", "vue", "node"],
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "src/App.vue", "src/main.ts"]
+}

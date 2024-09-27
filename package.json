@@ -1,14 +1,17 @@
 {
   "name": "@nicolascribbles/sketchbook-ui",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace=packages/demo",
-    "build:lib": "npm run build --workspace=packages/library",
-    "build:demo": "npm run build --workspace=packages/demo",
-    "build": "npm run build:lib && npm run build:demo"
+    "dev": "npm run dev --workspace=@nicolascribbles/sketchbook-ui",
+    "build:demo": "npm run build --workspace=@nicolascribbles/sketchbook-ui-demo",
+    "build:library": "npm run build --workspace=@nicolascribbles/sketchbook-ui",
+    "run:demo": "npm run preview --workspace=@nicolascribbles/sketchbook-ui-demo"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
   }
 }

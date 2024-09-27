@@ -1,11 +1,18 @@
 {
-    "compilerOptions": {
-      "module": "ESNext",
-      "moduleResolution": "Node",
-      "target": "ESNext",
-      "lib": ["ESNext", "DOM"],
-      "types": ["vite/client", "node"],
-      "allowSyntheticDefaultImports": true
-    },
-    "include": ["src/**/*", "vite.config.ts"]
+  "include": ["src/**/*", "src/shims.vue.d.ts"], // Ensure the shim file is included
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "useDefineForClassFields": true,
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": "src",
+  }
 }
