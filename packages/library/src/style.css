@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --color-base: #F8F9FA;
-  --color-base-muted: #E9ECEF;
+  --color-base: #a5b4fc;
+  --color-base-muted: #c7d2fe ;
   
   --color-primary-50: #F0F4F8;
-  --color-primary-100: #D9E2ED;
-  --color-primary-200: #B3C5DB;
+  --color-primary-100: #a5b4fc;
+  --color-primary-200: #818cf8;
   --color-primary-300: #8CA8C9;
   --color-primary-400: #4A6FA5;
   --color-primary-500: #4A6FA5;
@@ -68,6 +68,7 @@ html.dark, body.dark {
 
 html, body {
   @apply
-  bg-book-base
-  h-screen;
+  bg-book-base-muted
+  h-screen
+  text-book-primary-600;
 }

@@ -22,7 +22,7 @@
   ```
 -->
 <div class="min-h-full">
-  <header class="bg-book-primary-400 pb-24">
+  <header class="bg-book-primary-100 pb-24">
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div class="relative flex items-center justify-center py-5 lg:justify-between">
         <!-- Logo -->
@@ -81,7 +81,7 @@
                   <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
                 </svg>
               </div>
-              <input id="desktop-search" class="block w-full rounded-md border-0 bg-book-primary-400 opacity-20 py-1.5 pl-10 pr-3 text-book-base placeholder:text-book-primary-200 focus:bg-book-base focus:text-book-primary-900 focus:ring-0 focus:placeholder:text-book-primary-500 sm:text-sm sm:leading-6" placeholder="Search" type="search" name="search">
+              <input id="desktop-search" class="block w-full rounded-md border-0 bg-book-primary-400 opacity-20 py-1.5 pl-10 pr-3 text-book-base placeholder:text-book-primary-200 focus:bg-book-base-muted focus:text-book-primary-900 focus:ring-0 focus:placeholder:text-book-primary-500 sm:text-sm sm:leading-6" placeholder="Search" type="search" name="search">
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@
                     <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
                   </svg>
                 </div>
-                <input id="mobile-search" class="block w-full rounded-md border-0 bg-book-primary-400/20 py-1.5 pl-10 pr-3 text-book-base placeholder:text-book-primary-200 focus:bg-book-base focus:text-book-primary-900 focus:ring-0 focus:placeholder:text-book-primary-500 sm:text-sm sm:leading-6" placeholder="Search" type="search" name="search">
+                <input id="mobile-search" class="block w-full rounded-md border-0 bg-book-primary-400/20 py-1.5 pl-10 pr-3 text-book-base placeholder:text-book-primary-200 focus:bg-book-base-muted focus:text-book-primary-900 focus:ring-0 focus:placeholder:text-book-primary-500 sm:text-sm sm:leading-6" placeholder="Search" type="search" name="search">
               </div>
             </div>
           </div>
@@ -157,14 +157,14 @@
       -->
       
       <div class="absolute inset-x-0 top-0 z-30 mx-auto w-full max-w-3xl origin-top transform p-2 transition">
-        <div class="divide-y divide-book-primary-200 rounded-lg bg-book-base shadow-lg ring-1 ring-black ring-opacity-5">
+        <div class="divide-y divide-book-primary-200 rounded-lg bg-book-base-muted shadow-lg ring-1 ring-black ring-opacity-5">
           <div class="pb-2 pt-3">
             <div class="flex items-center justify-between px-4">
               <div>
                 <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=primary&shade=600" alt="Your Company">
               </div>
               <div class="-mr-2">
-                <button type="button" class="relative inline-flex items-center justify-center rounded-md bg-book-base p-2 text-book-primary-400 hover:bg-book-primary-100 hover:text-book-primary-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-book-primary-500">
+                <button type="button" class="relative inline-flex items-center justify-center rounded-md bg-book-base-muted p-2 text-book-primary-400 hover:bg-book-primary-100 hover:text-book-primary-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-book-primary-500">
                   <span class="absolute -inset-0.5"></span>
                   <span class="sr-only">Close menu</span>
                   <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -190,7 +190,7 @@
                 <div class="truncate text-base font-medium text-gray-800">Tom Cook</div>
                 <div class="truncate text-sm font-medium text-gray-500">tom@example.com</div>
               </div>
-              <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-book-base p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-book-base-muted p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                 <span class="absolute -inset-1.5"></span>
                 <span class="sr-only">View notifications</span>
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -217,7 +217,7 @@
         <div class="grid grid-cols-1 gap-4 lg:col-span-2">
           <section aria-labelledby="section-1-title">
             <h2 class="sr-only" id="section-1-title">Section title</h2>
-            <div class="overflow-hidden rounded-lg bg-book-base shadow">
+            <div class="overflow-hidden rounded-lg bg-book-primary-100 text-book-primary-900 ring-2 ring-book-primary-800 shadow">
               <div class="p-6">
 
                 <slot></slot>
@@ -231,7 +231,7 @@
         <div class="grid grid-cols-1 gap-4">
           <section aria-labelledby="section-2-title">
             <h2 class="sr-only" id="section-2-title">Section title</h2>
-            <div class="overflow-hidden rounded-lg bg-book-base shadow">
+            <div class="overflow-hidden rounded-lg bg-book-primary-200 ring-2 ring-book-primary-800 shadow text-book-primary-800">
               <div class="p-6">
                 <!-- Your content -->
                  <slot name="sidebar"></slot>
