@@ -1,74 +1,37 @@
+/* load tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-base: #a5b4fc;
-  --color-base-muted: #c7d2fe ;
-  
-  --color-primary-50: #F0F4F8;
-  --color-primary-100: #a5b4fc;
-  --color-primary-200: #818cf8;
-  --color-primary-300: #8CA8C9;
-  --color-primary-400: #4A6FA5;
-  --color-primary-500: #4A6FA5;
-  --color-primary-600: #3B5984;
-  --color-primary-700: #2C4363;
-  --color-primary-800: #1E2C42;
-  --color-primary-900: #0F1621;
-  
-  --color-secondary-50: #FCF5F1;
-  --color-secondary-100: #F8E5D9;
-  --color-secondary-200: #F1CBB3;
-  --color-secondary-300: #E9B18D;
-  --color-secondary-400: #E29767;
-  --color-secondary-500: #9C6644;
-  --color-secondary-600: #7D5236;
-  --color-secondary-700: #5E3D29;
-  --color-secondary-800: #3E291B;
-  --color-secondary-900: #1F140E;
-  
-  --color-success: #28A745;
-  --color-warning: #FFC107;
-  --color-danger: #DC3545;
-  --color-info: #17A2B8;
-}
 
-html.dark, body.dark {
-  --color-base: #1A1A1A;
-  --color-base-muted: #2C2C2C;
-  
-  --color-primary-50: #0F1621;
-  --color-primary-100: #1E2C42;
-  --color-primary-200: #2C4363;
-  --color-primary-300: #3B5984;
-  --color-primary-400: #4A6FA5;
-  --color-primary-500: #668BB7;
-  --color-primary-600: #8CA8C9;
-  --color-primary-700: #B3C5DB;
-  --color-primary-800: #D9E2ED;
-  --color-primary-900: #F0F4F8;
-  
-  --color-secondary-50: #1F140E;
-  --color-secondary-100: #3E291B;
-  --color-secondary-200: #5E3D29;
-  --color-secondary-300: #7D5236;
-  --color-secondary-400: #9C6644;
-  --color-secondary-500: #E29767;
-  --color-secondary-600: #E9B18D;
-  --color-secondary-700: #F1CBB3;
-  --color-secondary-800: #F8E5D9;
-  --color-secondary-900: #FCF5F1;
-  
-  --color-success: #34CE57;
-  --color-warning: #FFDA6A;
-  --color-danger: #E4606D;
-  --color-info: #3DD5F3;
+/* load fonts */
+@layer base {
+  /* Mona Sans */
+  @font-face {
+    font-family: "Mona Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: local("Mona Sans"), url("/fonts/Roboto/Mona-Sans.var.woff2") format("woff2");
+  }
+
+
+  /* Inter */
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('ttf');
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('Inter-Italic-VariableFont_opsz,wght.ttf') format('ttf');
+    font-style: italic;
+    font-display: swap;
+  }
 }
 
 html, body {
-  @apply
-  bg-book-base-muted
-  h-screen
-  text-book-primary-600;
 }
