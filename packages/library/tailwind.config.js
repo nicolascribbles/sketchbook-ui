@@ -9,7 +9,7 @@ export default {
   plugins: [
     require('@tailwindcss/forms')
   ],
-  darkMode: 'selector',
+  darkMode: 'class',
 
   theme: {
     extend: {
